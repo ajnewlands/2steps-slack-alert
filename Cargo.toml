@@ -1,0 +1,19 @@
+[package]
+name = "2steps-slack-alert"
+version = "0.1.0"
+authors = ["Andrew Newlands <andrew_newlands@hotmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lapin = "0.32"
+env_logger = "0.7"
+log = "0.4"
+reqwest = {version = "0.10", features = [ "json" ] }
+futures = "0.3"
+tokio = { version = "0.2", features = ["full"] }
+serde_json = "1.0"
+clap = "2.33"
+yaml-rust = "0.4"
+
